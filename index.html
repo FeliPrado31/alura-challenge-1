@@ -15,35 +15,45 @@
     <header class="header">
         <img src="/assets/icon/Logo.svg" alt="Alura logo">
     </header>
-    <main>
-        <section class="text-input-container">
-            <textarea id="text-input" name="text-input" placeholder="Inserte el texto aquí"></textarea>
-        </section>
-        <section class="text-info">
-            <article class="text-info__instructions">
-                <img class="text-info__icon" src="/assets/icon/Interrogacion.svg" alt="icon">
-                <span class="text-info__message">Solo letras minúsculas y sin acentos</span>
-            </article>
-            <article class="text-info__actions">
-                <button type="button" class="text-info__action-encrypt">Encriptar</button>
-                <button type="button" class="text-info__action-decrypt">Desencriptar</button>
-            </article>
-        </section>
-        <section class="card">
-            <article class="card__content">
-                <h2 class="card__title">Ningún mensaje fue encontrado</h2>
-                <p class="card_description">Ingresa el texto que desees encriptar o desencriptar.</p>
-                <!-- <p class="card_text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque
-                    vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit
-                    elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.
-                </p>
-                <button class="text-info__action-copy">
-                    Copiar
-                </button> -->
-            </article>
-        </section>
+    <main class="content-container">
+        <div>
+            <section class="text-input-container">
+                <textarea id="text-input" name="text-input" placeholder="Inserte el texto aquí"></textarea>
+            </section>
+            <section class="text-info">
+                <article class="text-info__instructions">
+                    <img class="text-info__icon" src="/assets/icon/Interrogacion.svg" alt="icon">
+                    <span class="text-info__message">Solo letras minúsculas y sin acentos</span>
+                </article>
+                <article class="text-info__actions">
+                    <button type="button" class="text-info__action-encrypt">Encriptar</button>
+                    <button type="button" class="text-info__action-decrypt">Desencriptar</button>
+                </article>
+            </section>
+            <section class="card">
+                <article class="card__content">
+                    <!-- <h2 class="card__title">Ningún mensaje fue encontrado</h2>
+                    <p class="card_description">Ingresa el texto que desees encriptar o desencriptar.</p> -->
+                    <p class="card_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus
+                        scelerisque
+                        vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit
+                        elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.
+                    </p>
+                    <button class="text-info__action-copy">
+                        Copiar
+                    </button>
+                </article>
+            </section>
+        </div>
     </main>
+    <div class="message-container">
+        <img class="message-container__img" src="assets/Muñeco.png" alt="Imagen de mujer observando un diamante">
+        <div class="message-container__text">
+            <h2 class="card__title">Ningún mensaje fue encontrado</h2>
+            <p class="card_description">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+    </div>
 </body>
 
 </html>

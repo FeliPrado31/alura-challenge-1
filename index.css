@@ -109,6 +109,7 @@ table {
 
 .text-info__instructions{
   display: flex;
+  align-items: center;
 }
 
 .text-info__icon{
@@ -175,6 +176,7 @@ table {
 .card_text {
   font-size: 1.5rem;
   color: var(--gray-400);
+  text-align: start;
 }
 
 .text-info__action-copy{
@@ -185,4 +187,94 @@ table {
   color: var(--dark-blue-300);
   font-size: 1rem;
   height: 4rem;
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    margin: 4.6rem 2.5rem 2.5rem 2.5rem; /* top right bottom left */
+  }
+  .header {
+    margin-bottom: 7.25rem;
+  }
+
+  .text-input-container textarea {
+    height: 34.25rem;  
+  }
+
+  .text-info__actions{
+    flex-direction: row;
+  }
+
+  .text-info__action-encrypt{
+    width: 100%;
+  }
+
+  .text-info__action-decrypt{
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 1140px) {
+  .container {
+    margin: 2.5rem 2.5rem 2.5rem 8rem; /* top right bottom left */
+  }
+
+  .header {
+    margin-bottom: 5rem;
+  }
+
+  .content-container{
+    display: flex;
+    gap:5rem;
+  }
+
+  .text-input-container textarea {
+    height: 40rem;
+    width: 42.5rem;
+    margin-left: 7rem;
+  }
+
+  .text-info{
+    margin-left: 7rem;
+  }
+
+  .text-info__action-encrypt{
+    width: 20.5rem;
+  }
+
+  .text-info__action-decrypt{
+    width: 20.5rem;
+  }
+
+  .card {
+    display: none;
+  }
+
+  .message-container{
+    display: flex;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    justify-content: center;
+
+  }
+  
+  .message-container__text {
+    text-align: center;
+  }
+  
+  .card__title {
+    margin-bottom: 2rem; /* 32px en rem (suponiendo que 1rem = 16px) */
+    width: 21rem;
+  }
+  
+  .card_description {
+    margin-top: 2rem; /* 32px en rem (suponiendo que 1rem = 16px) */
+    width: 21rem;
+  }
+
+  
 }
