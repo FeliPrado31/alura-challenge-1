@@ -100,6 +100,11 @@ body {
 }
 
 
+.card__content{
+  width: 100%;
+  height: 100%;
+}
+
 .card__content textarea{
   border: none;
   background: none;
@@ -114,6 +119,11 @@ body {
   font-size: 1.5rem;
   margin-top: 2rem;
   color: var(--gray-400);
+}
+
+.card div {
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -238,9 +248,11 @@ footer {
   display: none;
 }
 
-.text-info__icon {
+
+.card__content__image{
   display: none;
 }
+
 
 @media (min-width: 768px) {
   .container {
@@ -275,9 +287,7 @@ footer {
     display: none;
   }
 
-  .text-info__icon {
-    display: none;
-  }
+
 
 }
 
@@ -310,19 +320,29 @@ footer {
   align-items: center;
 }
 
-
-.text-info__icon {
+.card__content__image{
   display: inline;
 }
+
+
 
 #encrypted-message{
   width: 100%;
   height: 100%;
   justify-content: center;
 }
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
 .card__content textarea {
   height: 48rem;
   width: 100%;
+  
 }
 
 }
