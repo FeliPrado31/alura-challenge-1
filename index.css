@@ -66,10 +66,12 @@ table {
   --gray-500: #343A40;
 }
 
-.container {
-  margin: 1.5rem 1rem 2.5rem 1rem; /* top right bottom left */
+body {
   font-family: 'Inter';
   background-color: var(--light-blue-100);
+}
+.container {
+  margin: 1.5rem 1rem 2.5rem 1rem; /* top right bottom left */
 }
 
 .header {
@@ -194,6 +196,12 @@ table {
   display: none;
 }
 
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
 
 @media (min-width: 768px) {
   .container {
