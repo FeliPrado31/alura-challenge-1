@@ -190,6 +190,11 @@ table {
 }
 
 
+.message-container{
+  display: none;
+}
+
+
 @media (min-width: 768px) {
   .container {
     margin: 4.6rem 2.5rem 2.5rem 2.5rem; /* top right bottom left */
@@ -213,12 +218,18 @@ table {
   .text-info__action-decrypt{
     width: 100%;
   }
+
+  .message-container{
+    display: none;
+  }
 }
 
 
 @media (min-width: 1140px) {
   .container {
     margin: 2.5rem 2.5rem 2.5rem 8rem; /* top right bottom left */
+    display: flex;
+    justify-content: center;
   }
 
   .header {
@@ -227,17 +238,19 @@ table {
 
   .content-container{
     display: flex;
-    gap:5rem;
+    align-items: center;
   }
 
   .text-input-container textarea {
     height: 40rem;
     width: 42.5rem;
-    margin-left: 7rem;
+    margin-top: 8rem;
+    margin-left: 5rem;
   }
 
   .text-info{
     margin-left: 7rem;
+    margin-top: 1rem;
   }
 
   .text-info__action-encrypt{
@@ -258,7 +271,11 @@ table {
     border-radius: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex-direction: column;
+    height: 59rem;
+    width: 25rem;
+    margin-left: 5rem;
     justify-content: center;
+    align-items: center;
 
   }
   
