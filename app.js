@@ -31,6 +31,16 @@ document.getElementById('copy').addEventListener('click', function () {
 });
 
 const encryptText = (text) => {
+
+    if (!/^[a-z]+$/.test(text)) {
+        textArea.value = "";
+        encryptedTextArea.value = "";
+        emptyMessage.style.display = 'flex';
+        encryptedMessage.style.display = 'none';
+        alert("El texto debe contener solo letras minúsculas y sin acentos.");
+        return;
+    }
+
     text = text.replace(/e/g, eEncryptedLetter);
     text = text.replace(/i/g, iEncryptedLetter);
     text = text.replace(/a/g, aEncryptedLetter);
