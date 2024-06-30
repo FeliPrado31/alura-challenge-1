@@ -35,7 +35,7 @@ Las "llaves" de encriptación que utilizaremos son las siguientes:
 
 ## 🌐 Despliegue
 
-El sitio ha sido desplegado en GitHub Pages. Puedes acceder a la aplicación [aquí](https://tu-usuario.github.io/encriptador-de-textos).
+El sitio ha sido desplegado en GitHub Pages. Puedes acceder a la aplicación [aquí](https://feliprado31.github.io/alura-challenge-1/)
 
 ## 🤝 Contribuciones
 
