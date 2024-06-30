@@ -10,6 +10,10 @@ const uEncryptedLetter = "ufat";
 
 document.getElementById('encrypt').addEventListener('click', function () {
     const text = textArea.value;
+    if (!/^[a-z]+$/.test(text)) {
+        alert("El texto debe contener solo letras minúsculas y sin acentos.");
+        return;
+    }
     emptyMessage.style.display = 'none';
     encryptedMessage.style.display = 'flex';
     encryptedTextArea.value = encryptText(text);
@@ -31,16 +35,6 @@ document.getElementById('copy').addEventListener('click', function () {
 });
 
 const encryptText = (text) => {
-
-    if (!/^[a-z]+$/.test(text)) {
-        textArea.value = "";
-        encryptedTextArea.value = "";
-        emptyMessage.style.display = 'flex';
-        encryptedMessage.style.display = 'none';
-        alert("El texto debe contener solo letras minúsculas y sin acentos.");
-        return;
-    }
-
     text = text.replace(/e/g, eEncryptedLetter);
     text = text.replace(/i/g, iEncryptedLetter);
     text = text.replace(/a/g, aEncryptedLetter);
